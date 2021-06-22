@@ -50,11 +50,23 @@ public class HelloWorld {
 //        x = x / y;
 //        y = y - x;
 
-        x /= y;
-        System.out.println(x);
-        y -= x;
-        System.out.println(y);
+//        x /= y;
+//        System.out.println(x);
+//        y -= x;
+//        System.out.println(y);
 
+//        int x = Integer.MAX_VALUE;
+//
+//        System.out.println(x);
+//        x += 1;
+//
+//        System.out.println(x);
+//        x -= 1;
+//        System.out.println(x);
+//
+//        x = x / 5;
+//
+//        System.out.println(x);
 
     }
 }
