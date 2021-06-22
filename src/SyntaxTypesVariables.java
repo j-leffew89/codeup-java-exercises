@@ -16,14 +16,27 @@ public class SyntaxTypesVariables {
 //        String myName = "Jesse";
 //        System.out.println(myName.toLowerCase(Locale.ROOT));
 
-        byte temperature = 75;
-//        var isNiceDay = true;
+//        byte temperature = 75;
+////        var isNiceDay = true;
+//
+//        if ((temperature > 60) && (temperature < 80 )){
+//            System.out.println("What a nice day");
+//        }else{
+//            System.out.println("I don't like it");
+//        }
+        int x = Integer.MAX_VALUE;
 
-        if ((temperature > 60) && (temperature < 80 )){
-            System.out.println("What a nice day");
-        }else{
-            System.out.println("I don't like it");
-        }
+        System.out.println(x);
+        x += 1;
+
+        System.out.println(x);
+        x -= 1;
+        System.out.println(x);
+
+        x = x / 5;
+
+        System.out.println(x);
+
     }
 }
 
