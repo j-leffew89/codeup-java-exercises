@@ -12,7 +12,7 @@ public class ConsoleExercises {
 //        String mySentence = String.format("The value of pi is approximately %.2f", pi);
 //        System.out.println(mySentence);
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
 //        int myNum = sc.nextInt();
 //        System.out.println(myNum);
@@ -33,24 +33,24 @@ public class ConsoleExercises {
         System.out.println("Rectangle P/A:");
         System.out.println("Enter Length");
 
-//        String length = sc.next();
-        double length = sc.nextDouble();
+        scanner.useDelimiter("\n");
+        String length = scanner.next();
+//        double length = scanner.nextDouble();
 
         System.out.println("Enter Width");
 
-//        String width = sc.next();
-        double width = sc.nextDouble();
+        String width = scanner.next();
+//        double width = scanner.nextDouble();
 
 
-//        int perimeter = (Integer.parseInt(length) * 2) + (Integer.parseInt(width));
-//        int area = (Integer.parseInt(length)) * (Integer.parseInt(width));
-        double perimeter = (length * 2) + (width * 2);
-        double area = (length * width);
+        int perimeter = (Integer.parseInt(length) * 2) + (Integer.parseInt(width));
+        int area = (Integer.parseInt(length)) * (Integer.parseInt(width));
+//        double perimeter = (length * 2) + (width * 2);
+//        double area = (length * width);
 
         System.out.println("Perimeter: " + perimeter);
         System.out.println("Area: " + area);
 
-
-
+//        Integer.parseInt();
     }
 }
