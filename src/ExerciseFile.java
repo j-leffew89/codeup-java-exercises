@@ -76,6 +76,7 @@ public class ExerciseFile {
             //TODO: using previous mini exercise, allow the user to input a new username
             // several times until a unique username is entered.
 
+
         }
     }
 }
