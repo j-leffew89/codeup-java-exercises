@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
@@ -70,13 +72,37 @@ public class ExerciseFile {
 //                System.out.println("Awesome username!");
 //        }
 
-        for(int myNum = 0; myNum <= 20; myNum++){
-            System.out.println(myNum);
+//        for(int myNum = 0; myNum <= 20; myNum++){
+//            System.out.println(myNum);
+//
+//            //TODO: using previous mini exercise, allow the user to input a new username
+//            // several times until a unique username is entered.
+//
+//        }
+//        System.out.println("hello world");
+//
+//        System.out.println(greeting("twenty-four"));
+//
+//        public static int greeting(String age){
+//            System.out.println("age: " + age);
+//            int indexOfR = age.indexOf('r');
+//            return indexOfR;
+//        }
 
-            //TODO: using previous mini exercise, allow the user to input a new username
-            // several times until a unique username is entered.
+        //    TODO: create a new method that accepts the name of a basketball
+//     team (ex: the spurs) and returns a String that says
+//     "[basketballTeam] is the best team.". Invoke that method within
+//     your main method (remember to pass in the name of the basketball
+//     team). print out the result of the new method.
+
+//        TODO: create a new method that accepts the string created from the
+    //first method and returns the number of characters in that string.
 
 
-        }
+        System.out.println(basketball("Spurs"));
+    }
+
+    public static String basketball(String teamName){
+        return teamName + " is the best team";
     }
 }
