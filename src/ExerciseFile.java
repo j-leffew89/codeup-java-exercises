@@ -5,14 +5,13 @@ import java.util.Scanner;
 
 public class ExerciseFile {
 
-    public static void main(String[] args) {
 
-        //        MINI EXERCISE
-        // TODO: create three unique usernames (user1, user2, user3).
-        //  create a fourth user and set it equal to user input. (ask
-        //  the user to enter a username). if the username has already
-        //  been used by user1, user2, or user3, print "sorry this
-        //  username already exists.
+    //        MINI EXERCISE
+    // TODO: create three unique usernames (user1, user2, user3).
+    //  create a fourth user and set it equal to user input. (ask
+    //  the user to enter a username). if the username has already
+    //  been used by user1, user2, or user3, print "sorry this
+    //  username already exists.
 
 //        Scanner sc = new Scanner(System.in);
 //
@@ -46,7 +45,7 @@ public class ExerciseFile {
 //                System.out.println("You can do better!");
 //        }
 
-        //TODO: refactor your code from the previous mini exercise into a switch statement
+    //TODO: refactor your code from the previous mini exercise into a switch statement
 
 //        System.out.println("Please enter a username:");
 //
@@ -89,7 +88,7 @@ public class ExerciseFile {
 //            return indexOfR;
 //        }
 
-        //    TODO: create a new method that accepts the name of a basketball
+    //    TODO: create a new method that accepts the name of a basketball
 //     team (ex: the spurs) and returns a String that says
 //     "[basketballTeam] is the best team.". Invoke that method within
 //     your main method (remember to pass in the name of the basketball
@@ -99,10 +98,47 @@ public class ExerciseFile {
     //first method and returns the number of characters in that string.
 
 
-        System.out.println(basketball("Spurs"));
+//        System.out.println(basketball("Spurs"));
+//    }
+//
+//    public static String basketball(String teamName){
+//        return teamName + " is the best team";
+//    }
+//    public static String count(String str){
+//        System.out.println(.length());
+//    }
+
+//-----------------Method OverLoading-----------------------
+
+    public static void main(String[] args) {
+        greeting("Jesse", "Sosa");
+        age(100);
     }
 
-    public static String basketball(String teamName){
-        return teamName + " is the best team";
+    public static void greeting() {
+        System.out.println("hello world");
+    }
+
+    public static void greeting(String oneGreeting) {
+        System.out.println(oneGreeting);
+    }
+
+    public static void greeting(int randomNum){
+        System.out.println(randomNum);
+    }
+    public static void greeting(char letter){
+        System.out.println(letter);
+    }
+
+    public static void greeting(int anotherNum, int andAnother){
+        System.out.println(anotherNum + " " + andAnother);
+    }
+
+    public static void greeting(String FirstName, String LastName){
+        System.out.println("Hello " + FirstName + " " + LastName);
+    }
+
+    public static void age(int oneAge){
+        System.out.println("That's crazy! You don't look " + oneAge + " years old!");
     }
 }
