@@ -111,8 +111,10 @@ public class ExerciseFile {
 //-----------------Method OverLoading-----------------------
 
     public static void main(String[] args) {
-        greeting("Jesse", "Sosa");
+//        greeting("Jesse", "Sosa");
         age(100);
+        quote("To be, or not to be That is the question!");
+        greeting(3, 3);
     }
 
     public static void greeting() {
@@ -134,11 +136,15 @@ public class ExerciseFile {
         System.out.println(anotherNum + " " + andAnother);
     }
 
-    public static void greeting(String FirstName, String LastName){
-        System.out.println("Hello " + FirstName + " " + LastName);
-    }
+//    public static void greeting(String FirstName, String LastName){
+//        System.out.println("Hello " + FirstName + " " + LastName);
+//    }
 
     public static void age(int oneAge){
         System.out.println("That's crazy! You don't look " + oneAge + " years old!");
+    }
+
+    public static void quote(String Quote){
+        System.out.println("Yo This is my Fav Quote: " + Quote);
     }
 }
