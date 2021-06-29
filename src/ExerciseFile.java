@@ -13,7 +13,7 @@ public class ExerciseFile {
     //  been used by user1, user2, or user3, print "sorry this
     //  username already exists.
 
-//        Scanner sc = new Scanner(System.in);
+//    Scanner sc = new Scanner(System.in);
 //
 //        String user1 = "Grady";
 //        String user2 = "Mitch";
@@ -110,41 +110,88 @@ public class ExerciseFile {
 
 //-----------------Method OverLoading-----------------------
 
-    public static void main(String[] args) {
-//        greeting("Jesse", "Sosa");
-        age(100);
-        quote("To be, or not to be That is the question!");
-        greeting(3, 3);
-    }
-
-    public static void greeting() {
-        System.out.println("hello world");
-    }
-
-    public static void greeting(String oneGreeting) {
-        System.out.println(oneGreeting);
-    }
-
-    public static void greeting(int randomNum){
-        System.out.println(randomNum);
-    }
-    public static void greeting(char letter){
-        System.out.println(letter);
-    }
-
-    public static void greeting(int anotherNum, int andAnother){
-        System.out.println(anotherNum + " " + andAnother);
-    }
+//    public static void main(String[] args) {
+////        greeting("Jesse", "Sosa");
+//        age(100);
+//        quote("To be, or not to be That is the question!");
+//        greeting(3, 3);
+//    }
+//
+//    public static void greeting() {
+//        System.out.println("hello world");
+//    }
+//
+//    public static void greeting(String oneGreeting) {
+//        System.out.println(oneGreeting);
+//    }
+//
+//    public static void greeting(int randomNum){
+//        System.out.println(randomNum);
+//    }
+//    public static void greeting(char letter){
+//        System.out.println(letter);
+//    }
+//
+//    public static void greeting(int anotherNum, int andAnother){
+//        System.out.println(anotherNum + " " + andAnother);
+//    }
 
 //    public static void greeting(String FirstName, String LastName){
 //        System.out.println("Hello " + FirstName + " " + LastName);
 //    }
 
-    public static void age(int oneAge){
-        System.out.println("That's crazy! You don't look " + oneAge + " years old!");
-    }
+//    public static void age(int oneAge){
+//        System.out.println("That's crazy! You don't look " + oneAge + " years old!");
+//    }
+//
+//    public static void quote(String Quote){
+//        System.out.println("Yo This is my Fav Quote: " + Quote);
+//
+//------------------------------WARMUP
+//    TODO: prompt a user to tell us about themselves (age, name, if
+//     they have any pets (true/false). Using method overloading, create
+//     methods that will return the first fact they told us about
+//     themselves. ex: I can input: 18 -- Laura -- false in which case I
+//     expect you to return: 18. but if I tell you my name first: Laura --
+//     false -- 18. I expect you to return "Laura" ... etc.
 
-    public static void quote(String Quote){
-        System.out.println("Yo This is my Fav Quote: " + Quote);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+//
+//        System.out.println("What is your name, age and do you have any pets?");
+//        String input1 = sc.next();
+//        String input2 = sc.next();
+//        String input3 = sc.next();
+//
+//        System.out.println(getTheFact(input1));
+//    }
+//
+//    private static String getTheFact(String input1){
+//        return input1;
+//    }
+//        System.out.println(" How many seats are there in the movie " + " theatre?");
+//
+//        int seatsLeft = sc.nextInt();
+//        movieTheatre(seatsLeft);
+//    }
+
+//    public static void movieTheatre(int numSeats){
+//        if(numSeats > 0) {
+//            System.out.println("there are " + numSeats + " available");
+//
+//            numSeats--;
+//            System.out.println("numSeats: " + numSeats);
+//            movieTheatre(numSeats);
+//        }
+//    }
+
+        //    TODO: you are a sports manager. Prompt your client who is training
+//     for a marathon how many miles they have to run today. You're the
+//     coach, so you decide how many miles they ran that day. create a method that takes in how
+//     many miles that have left in training and simulate that they check in with you after every
+//     2 miles. print out how many miles they have left in training until they have 0 miles left.
+
+        System.out.println("Okay, today i'm having you run 20miles");
+
     }
 }
