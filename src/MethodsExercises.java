@@ -5,7 +5,11 @@ import java.util.Scanner;
 public class MethodsExercises {
 
     public static void main(String[] args) {
-
+        System.out.println(add(5,3));
+        System.out.println(subtract(21,9));
+        System.out.println(multiply(8,8));
+        System.out.println(divide(14,2));
+        System.out.println(modulus(4,18));
         getInteger(30,60);
 
     }
@@ -17,6 +21,13 @@ public class MethodsExercises {
     }
     public static int multiply(int num1, int num2){
         return num1 * num2;
+//
+//        int sum = 0;
+//
+//        for(int i = 1; i <= num1; i++) {
+//
+//            sum = sum + num2;
+//        }
     }
     public static int divide(int num1, int num2){
         return num1 / num2;
@@ -30,7 +41,7 @@ public class MethodsExercises {
         Scanner scanner = new Scanner(System.in);
         String userChoice = "";
         do {
-            System.out.printf("Enter number between %d-%d", min, max);
+            System.out.printf("Enter number between %s and %s", min, max);
             int userInput = scanner.nextInt();
             if (userInput > min && userInput < max){
                 System.out.println("In Range");
