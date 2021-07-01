@@ -40,16 +40,16 @@ public class Input {
     public double getDouble(double min, double max){
         this.doubleNum = getDouble();
         if(doubleNum < min){
-            System.out.println("Please pick a number between " + min + " and " + max);
+//            System.out.println("Please pick a number between " + min + " and " + max);
             getDouble(min, max);
         } else if(doubleNum > max){
-            System.out.println("Please pick a number between " + min + " and " + max);
+//            System.out.println("Please pick a number between " + min + " and " + max);
             getDouble(min, max);
         }
         return this.doubleNum;
     }
     public double getDouble(){
-        System.out.print("Please enter a number with decimals: ");
+//        System.out.print("Please enter a number with decimals: ");
         double doubleNum = scanner.nextDouble();
         return doubleNum;
     }
