@@ -2,13 +2,13 @@ package oop.animals;
 
 public class AquaMammal extends MarineAnimal {
 
-   private int maxTimeSubmerged;
+    private int maxTimeSubmerged;
 
-   public AquaMammal(boolean canSwim, int length, int finCount,
-                     boolean isSaltwater, String name, int maxTimeSubmerged){
-       super(canSwim, length, finCount, isSaltwater, name);
-       this.maxTimeSubmerged = maxTimeSubmerged;
-   }
+    public AquaMammal(boolean canSwim, int length, int finCount,
+                      boolean isSaltwater, String name, int maxTimeSubmerged) {
+        super(canSwim, length, finCount, isSaltwater, name);
+        this.maxTimeSubmerged = maxTimeSubmerged;
+    }
 
     public AquaMammal(String name) {
         super(name);
