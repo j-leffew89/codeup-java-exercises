@@ -15,5 +15,4 @@ public class ShapeTest {
         System.out.println("box2 area is: " + box2.getArea());
 
     }
-
 }
