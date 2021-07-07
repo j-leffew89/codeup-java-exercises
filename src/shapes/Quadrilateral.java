@@ -2,25 +2,18 @@ package shapes;
 
 public abstract class Quadrilateral implements Shape {
 
-    protected float length;
-    protected float width;
+    protected double length;
+    protected double width;
 
-    public Quadrilateral(float length, float width) {
+    public Quadrilateral(double length, double width) {
         this.length = length;
         this.width = width;
     }
 
-    public float getLength(){
-        return length;
-    }
 
-    public float getWidth(){
-        return width;
-    }
+    public abstract void setLength(double length);
 
-    public abstract float setLength();
-
-    public abstract float setWidth();
+    public abstract void setWidth(double width);
 
 
 }
