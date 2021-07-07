@@ -155,8 +155,7 @@ public class ExerciseFile {
 //     expect you to return: 18. but if I tell you my name first: Laura --
 //     false -- 18. I expect you to return "Laura" ... etc.
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+
 //
 //        System.out.println("What is your name, age and do you have any pets?");
 //        String input1 = sc.next();
@@ -191,7 +190,28 @@ public class ExerciseFile {
 //     many miles that have left in training and simulate that they check in with you after every
 //     2 miles. print out how many miles they have left in training until they have 0 miles left.
 
-        System.out.println("Okay, today i'm having you run 20miles");
+//        System.out.println("Okay, today i'm having you run 20miles");
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Write some stuff that has uppercase letters");
+        String input = sc.nextLine();
+
+        int upperCase = 0;
+        int lowerCase = 0;
+
+        for (int i = 0; i < input.length(); i++) {
+
+            if (Character.isUpperCase(input.charAt(i))) upperCase++;
+
+
+            if (Character.isLowerCase(input.charAt(i))) lowerCase++;
+        }
+
+        System.out.println("There are: " + upperCase + " UpperCase Letters");
+        System.out.println("There are: " + lowerCase + " LowerCase letters");
+
+
 
     }
 }
