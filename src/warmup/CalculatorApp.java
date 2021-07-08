@@ -32,8 +32,12 @@ public class CalculatorApp {
                 break;
             case '/': answer = num1 / num2;
                 break;
-
         }
+
+        System.out.println("\nWould you like to continue calculating? (y/n)");
+
+
+
         System.out.println(num1 + " " + operator + " " + num2 + " = " + answer);
     }
 }
