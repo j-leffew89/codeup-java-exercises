@@ -1,19 +1,34 @@
+import java.util.Arrays;
+
 public class ArraysExercises {
 
 
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
-        System.out.println(numbers);
+        System.out.println(Arrays.toString(numbers));
 
         Person Finky = new Person("Tiffanny");
         Person Diamond = new Person("Diamond");
         Person Josh = new Person("Josh");
+        Person Jesse = new Person("Jesse");
 
         Person[] People = {Finky, Diamond, Josh};
 
-        for (int i = 0; i < People.length; i++) {
-            System.out.println(People[i].getName());
-        }
+        Person[] NewPerson = addPerson(People, new Person("Jesse"));
 
+        for (Person people: NewPerson) {
+            System.out.println(people.getName());
+        }
+//        System.out.println(addPerson(People, Jesse));
+
+    }
+    public static Person[] addPerson(Person[] People, Person addPerson){
+        Person[] PeopleTwo = new Person[People.length + 1];
+
+        for (int i = 0; i < People.length; i++) {
+            PeopleTwo[i] = People[i];
+        }
+        PeopleTwo[People.length] = addPerson;
+                return PeopleTwo;
     }
 }
