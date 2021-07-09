@@ -1,14 +1,22 @@
 package movies;
 
 import util.Input;
-import java.util.Scanner;
-import java.util.Arrays;
 
 public class MoviesApplication {
+    private static void getNames(Movie[] movies, String category) {
+        for (int i = 0; i < movies.length; i++) {
+            if (category != null) {
+                if (movies[i].getCategory().equals(category)) {
+                    System.out.println(movies[i].getName());
+                }
+            } else {
+                System.out.println(movies[i].getName());
+            }
+        }
+    }
 
     public static void main(String[] args) {
 
-        public static void home(Scanner sc){
 
         System.out.println("What would you like to do?\n\n" +
                 "0 - exit\n" +
@@ -20,35 +28,36 @@ public class MoviesApplication {
         );
 
         Input userInput = new Input();
-//        userInput.getInt(0, 5);
+
         Movie[] allMovies = MoviesArray.findAll();
-//        System.out.println(Arrays.toString(allMovies));
 
-        for (int i = 0; i < allMovies.length; i++) {
-            System.out.println(allMovies[i].getCategory());
+
+        switch (userInput.getInt(0, 5)) {
+
+
+            case 0:
+                System.out.println("Okay, see you next time!");
+                break;
+            case 1:
+                getNames(allMovies, null);
+                break;
+            case 2:
+                getNames(allMovies, "animated");
+                break;
+            case 3:
+                getNames(allMovies, "drama");
+                break;
+            case 4:
+                getNames(allMovies, "horror");
+                break;
+            case 5:
+                getNames(allMovies, "sci-fi");
+                break;
+            case 6:
+                new Movie("Test", "test");
+            default:
+                System.out.println("That's not a choice!!");
         }
-
-//        switch (userInput.getInt(0, 5)){
-//            case 0:
-//                break;
-//            case 1:
-//                (allMovies);
-//                break;
-//            case 2:
-//                (allMovies, "animated");
-//                break;
-//            case 3:
-//                (allMovies, "drama");
-//                break;
-//            case 4:
-//                (allMovies, "horror");
-//                break;
-//            case 5:
-//                (allMovies, "sci-fi");
-//                break;
-//
-//        }
-
 
     }
 
