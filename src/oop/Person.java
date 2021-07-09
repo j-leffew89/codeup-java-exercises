@@ -1,6 +1,6 @@
 package oop;
 
-public class person {
+public class Person {
 
     // Class Members (all three are class members(field, constructor, properties))
 
@@ -13,7 +13,7 @@ public class person {
     private static final boolean hasSkin = true;
 
     // Constructor
-    public person(String name, int age,
+    public Person(String name, int age,
                   String height, String nationality) {
         this.name = name;
         this.age = age;
@@ -21,7 +21,10 @@ public class person {
         this.nationality = nationality;
     }
 
-    public person() {
+
+
+
+    public Person() {
 
     }
 
