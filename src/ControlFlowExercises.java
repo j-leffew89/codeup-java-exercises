@@ -48,7 +48,7 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 //--------------------------------------------------------
-//
+
 //        for (int i = 1; i <= 100; i++){
 //            if (i % 15 == 0){
 //                System.out.println("FIZZBUZZ");
@@ -63,7 +63,7 @@ public class ControlFlowExercises {
 //            }
 //
 //        }
-//-------------------------------------------------------------
+////-------------------------------------------------------------
 //        while(true) {
 //
 //            Scanner scanner = new Scanner(System.in);
@@ -92,6 +92,7 @@ public class ControlFlowExercises {
 //                System.out.println("Come back and play again sometime!");
 //            }break;
 //        }
+//--------------------------------------------------------
 
         while(true){
 
@@ -137,6 +138,5 @@ public class ControlFlowExercises {
                 System.out.println("Come back and enter your number to get your grade!");
             }break;
         }
-
     }
 }
