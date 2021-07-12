@@ -13,7 +13,7 @@ public class Input {
         String message = "hello";
         return message;
     }
-    public boolean yesNo(){
+    public boolean yesNo(String s){
         System.out.print("Yes or Yes?: ");
         String answer = scanner.next().toLowerCase();
         if(answer.equals("y") || answer.equals("yes")){

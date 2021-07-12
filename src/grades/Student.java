@@ -46,4 +46,7 @@ public class Student {
                 return total / grade.size();
 
         }
+//        public ArrayList<Double> getGrades() {
+////                return this.grades;
+//        }
 }
