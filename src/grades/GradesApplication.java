@@ -9,9 +9,11 @@ public class GradesApplication {
 
 
     public static void main(String[] args) {
+        application();
+    }
 
+    public static void application() {
         HashMap<String, Student> students = new HashMap<>();
-
         Student Jesse = new Student("Jesse");
         Jesse.addGrade(91);
         Jesse.addGrade(88);
@@ -47,7 +49,7 @@ public class GradesApplication {
         }
         System.out.println("\n\nWhat Student would you like to see more information on?\n");
         System.out.println(">");
-        String  userInput = sc.next();
+        String userInput = sc.next();
         switch (userInput) {
             case "Michelle01":
                 System.out.println("Name: " + Michelle.getName() + "\n-Github UserName: " + userInput +
@@ -64,9 +66,26 @@ public class GradesApplication {
             case "Ian20":
                 System.out.println("Name: " + Ian.getName() + "\n-Github UserName: " + userInput +
                         "\nCurrent Average: " + Ian.getGradeAverage());
-                break;
+                keepGoing();
             default:
                 System.out.printf("Sorry, No student found with the github user of %s.", userInput);
         }
     }
+
+
+    public static void done() {
+        System.out.println("Okay see you next time!");
+    }
+
+    public static void keepGoing() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Would you like to see another student?\n");
+        String input = sc.next();
+        if (input.equalsIgnoreCase("y")) {
+            application();
+        }else{
+            done();
+        }
+    }
+
 }

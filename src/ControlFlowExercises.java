@@ -30,7 +30,7 @@ public class ControlFlowExercises {
 //            System.out.println(num);
 //            num *=num;
 //        }while (num <= 1000000);
-
+//
 //-------------------REFACTORING------------------------
 //        for(int i = 5; i <= 15; i += 1) {
 //            System.out.println(i);
@@ -39,7 +39,7 @@ public class ControlFlowExercises {
 //        for(int i = 0; i <= 100; i+=2) {
 //            System.out.println(i);
 //        }
-
+//
 //        for (int i = 100; i >= -10; i -= 5) {
 //            System.out.println(i);
 //        }
