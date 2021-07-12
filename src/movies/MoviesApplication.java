@@ -53,8 +53,6 @@ public class MoviesApplication {
             case 5:
                 getNames(allMovies, "sci-fi");
                 break;
-            case 6:
-                new Movie("Test", "test");
             default:
                 System.out.println("That's not a choice!!");
         }
