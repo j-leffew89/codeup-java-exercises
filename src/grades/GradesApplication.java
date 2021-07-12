@@ -1,16 +1,17 @@
 package grades;
 
-import util.Input;
-
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class GradesApplication {
     public static HashMap<String, Student> students = new HashMap<>();
     public static Scanner sc = new Scanner(System.in);
 
+
     public static void main(String[] args) {
+
+        HashMap<String, Student> students = new HashMap<>();
+
         Student Jesse = new Student("Jesse");
         Jesse.addGrade(91);
         Jesse.addGrade(88);
@@ -31,66 +32,41 @@ public class GradesApplication {
         Ian.addGrade(90);
         Ian.addGrade(86);
 
-        HashMap<String, Student> students = new HashMap<>();
-        students.put("j-leffew89", Jesse);
+
+        students.put("J-leffew89", Jesse);
         students.put("Michelle01", Michelle);
         students.put("Aly_02", Aly);
         students.put("Ian20", Ian);
 
-        options(students);
-
-    }
-
-    public static void options(HashMap<String, Student> students) {
-        Scanner sc = new Scanner(System.in);
-        String userInput = "";
         System.out.println("Welcome!");
-        System.out.println("\nHere are the GitHub usernames of our students:\n");
+        System.out.println("\nHere are the Github usernames of our students:\n");
+
+
         for (String userName : students.keySet()) {
             System.out.printf("|%s| ", userName);
         }
-
-        System.out.println("What would you like to do?\n\n" +
-                "0 - exit\n" +
-                "1 - view all grades\n" +
-                "2 - view specific student\n"
-        );
-    }
-
-
-    public static void userChoice(Scanner scanner) {
-        String choice = sc.next();
-        if (choice.equalsIgnoreCase("0")) {
-            return;
-        }
-        if (choice.equalsIgnoreCase("1")) {
-
-        }
-        if (choice.equalsIgnoreCase("2")) {
-            displayStudent(chooseStudent());
-        }
-    }
-
-    public static String chooseStudent() {
-
-        System.out.println("What student would you like to see more information on?");
+        System.out.println("\n\nWhat Student would you like to see more information on?\n");
         System.out.println(">");
-        String userInput = sc.next();
-        for (String userName : students.keySet()) {
-            if (userInput.equalsIgnoreCase(userName)) {
-                return userName;
-            }
+        String  userInput = sc.next();
+        switch (userInput) {
+            case "Michelle01":
+                System.out.println("Name: " + Michelle.getName() + "\n-Github UserName: " + userInput +
+                        "\nCurrent Average: " + Michelle.getGradeAverage());
+                break;
+            case "J-leffew89":
+                System.out.println("Name: " + Jesse.getName() + "\n-Github UserName: " + userInput +
+                        "\nCurrent Average: " + Jesse.getGradeAverage());
+                break;
+            case "Aly_02":
+                System.out.println("Name: " + Aly.getName() + "\n-Github UserName: " + userInput +
+                        "\nCurrent Average: " + Aly.getGradeAverage());
+                break;
+            case "Ian20":
+                System.out.println("Name: " + Ian.getName() + "\n-Github UserName: " + userInput +
+                        "\nCurrent Average: " + Ian.getGradeAverage());
+                break;
+            default:
+                System.out.printf("Sorry, No student found with the github user of %s.", userInput);
         }
-        System.out.println("Sorry, no student found with the GitHub username of \"" + userInput + "\".");
-        return chooseStudent();
     }
-
-    public static void displayStudent(String student) {
-        Student thisStudent = students.get(student);
-        System.out.printf("Name: %s \nGithub Username: %s \nCurrent Average: %.2f \nList Of Grades: %s\n",
-                thisStudent.getName(), student, thisStudent.getGradeAverage(), thisStudent.getGrades());
-
-    }
-
-
 }
