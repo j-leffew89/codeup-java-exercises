@@ -64,69 +64,23 @@ public class ControlFlowExercises {
 //
 //        }
 ////-------------------------------------------------------------
-//        while(true) {
-//
-//            Scanner scanner = new Scanner(System.in);
-//
-//            System.out.println("What number would you like to go up to?");
-//
-//            int input = scanner.nextInt();
-//
-//            System.out.println("Here is your table!\n");
-//            System.out.println("Number | square | cubed");
-//            System.out.println("------ | ------ | ------");
-//
-//            for (int i = 1; i <= input; i++) {
-//                int squared = i * i;
-//                int cubed = i * i * i;
-//
-//                System.out.println(i + "      | " + squared + "\t\t| " + cubed);
-//            }
-//
-//            System.out.println("Would you like to continue?");
-//            String prompt = scanner.next().toLowerCase();
-//
-//            if (prompt.equals("yes")) {
-//                continue;
-//            } else {
-//                System.out.println("Come back and play again sometime!");
-//            }break;
-//        }
-//--------------------------------------------------------
-
-        while(true){
+        while(true) {
 
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter your number, 0-100 and get your grade");
 
-            int grade = scanner.nextInt();
+            System.out.println("What number would you like to go up to?");
 
-            if(grade >= 97){
-                System.out.println("Your grade is an A+");
-            }else if(grade >=93){
-                System.out.println("Your grade is an A");
-            }else if(grade >=90){
-                System.out.println("Your grade is an A-");
-            }else if(grade >= 87){
-                System.out.println("Your grade is an B+");
-            }else if(grade >= 83){
-                System.out.println("Your grade is an B");
-            }else if(grade >= 80){
-                System.out.println("Your grade is an B-");
-            }else if(grade >= 77){
-                System.out.println("Your grade is an C+");
-            }else if(grade >= 73){
-                System.out.println("Your grade is an C");
-            }else if(grade >= 70){
-                System.out.println("Your grade is an C-");
-            }else if(grade >= 67){
-                System.out.println("Your grade is an D+");
-            }else if(grade >= 63){
-                System.out.println("Your grade is an D");
-            }else if(grade >= 60){
-                System.out.println("Your grade is an D-");
-            }else {
-                System.out.println("Your grade is an F, Do BETTER!");
+            int input = scanner.nextInt();
+
+            System.out.println("Here is your table!\n");
+            System.out.println("Number | square | cubed");
+            System.out.println("------ | ------ | ------");
+
+            for (int i = 1; i <= input; i++) {
+                int squared = i * i;
+                int cubed = i * i * i;
+
+                System.out.println(i + "      | " + squared + "\t\t| " + cubed);
             }
 
             System.out.println("Would you like to continue?");
@@ -135,8 +89,54 @@ public class ControlFlowExercises {
             if (prompt.equals("yes")) {
                 continue;
             } else {
-                System.out.println("Come back and enter your number to get your grade!");
+                System.out.println("Come back and play again sometime!");
             }break;
         }
+//--------------------------------------------------------
+
+//        while(true){
+//
+//            Scanner scanner = new Scanner(System.in);
+//            System.out.println("Enter your number, 0-100 and get your grade");
+//
+//            int grade = scanner.nextInt();
+//
+//            if(grade >= 97){
+//                System.out.println("Your grade is an A+");
+//            }else if(grade >=93){
+//                System.out.println("Your grade is an A");
+//            }else if(grade >=90){
+//                System.out.println("Your grade is an A-");
+//            }else if(grade >= 87){
+//                System.out.println("Your grade is an B+");
+//            }else if(grade >= 83){
+//                System.out.println("Your grade is an B");
+//            }else if(grade >= 80){
+//                System.out.println("Your grade is an B-");
+//            }else if(grade >= 77){
+//                System.out.println("Your grade is an C+");
+//            }else if(grade >= 73){
+//                System.out.println("Your grade is an C");
+//            }else if(grade >= 70){
+//                System.out.println("Your grade is an C-");
+//            }else if(grade >= 67){
+//                System.out.println("Your grade is an D+");
+//            }else if(grade >= 63){
+//                System.out.println("Your grade is an D");
+//            }else if(grade >= 60){
+//                System.out.println("Your grade is an D-");
+//            }else {
+//                System.out.println("Your grade is an F, Do BETTER!");
+//            }
+//
+//            System.out.println("Would you like to continue?");
+//            String prompt = scanner.next().toLowerCase();
+//
+//            if (prompt.equals("yes")) {
+//                continue;
+//            } else {
+//                System.out.println("Come back and enter your number to get your grade!");
+//            }break;
+//        }
     }
 }

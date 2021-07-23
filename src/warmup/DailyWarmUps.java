@@ -7,9 +7,9 @@ public class DailyWarmUps {
 
     public static void main(String[] args) {
 
-        String str = "Oberon is the best cohort ever!";
+//        String str = "Oberon is the best cohort ever!";
 
-        randomNum(str);
+//        randomNum(str);
 
 
 //        Scanner sc = new Scanner(System.in);
@@ -61,19 +61,19 @@ public class DailyWarmUps {
 //    }
 //-------------------------------------------------------------
 
-    public static void randomNum(String str){
-
-        Random random = new Random();
-
-        int upperLimit = 50;
-
-        int rando = random.nextInt(upperLimit);
+//    public static void randomNum(String str){
+//
+//        Random random = new Random();
+//
+//        int upperLimit = 50;
+//
+//        int rando = random.nextInt(upperLimit);
 
 //        try{
 //            System.out.println("Give me a number between 0-50!");
 //
 //        }catch
 
-    }
+//    }
 
 }
